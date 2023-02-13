@@ -1,8 +1,10 @@
 /* VARIABLES */
 :root {
-    --jumbo-blue: #b4d0e7;
     --blackborder: 2px dashed black;
     --margin-bottom: 100px;
+    /* Colors */
+    --jumbo-blue: #b4d0e7;
+    --blue-btn: #0061ff;
 }
 
 /* RESET */
@@ -47,6 +49,21 @@ body {
     border: var(--blackborder);
 }
 
+.button {
+    display: inline-block;
+    padding: 10px;
+}
+
+.blue-button {
+    background-color: var(--blue-btn);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* HEADER */
 /* ----- Header top ----- */
 .header {
@@ -58,8 +75,6 @@ body {
 /* ----- Jumbotron ----- */
 .jumbotron {
     padding-top: 100px;
-    /* debug */
-    min-height: 600px;
     background-color: var(--jumbo-blue);
 }
 
@@ -67,22 +82,20 @@ h1 {
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 50px;
-    /* debug */
-    min-height: 100px;
-    background-color: bisque;
 }
 
 .jumbo-image {
     width: 70%;
     float: right;
-    /* debug */
-    background-color: yellow;
 }
 
-.jumbo-description {
-    /* debug */
-    min-height: 350px;
-    background-color: burlywood;
+.jumbo-description .button {
+    margin: 30px 0;
+}
+
+.jumbo-description i {
+    font-size: 3rem;
+    margin: 3rem 0 10px;
 }
 
 /* MAIN */
