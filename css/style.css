@@ -129,18 +129,21 @@ h1 {
 
 /* Find a partner section */
 .find-partner {
+    margin-bottom: 100px;
     /* debug */
     min-height: 400px;
     border: var(--blackborder);
 }
 
 .partner-image {
+    width: 60%;
     /* debug */
     min-height: 400px;
     background-color: coral;
 }
 
 .partner-text {
+    width: 40%;
     /* debug */
     min-height: 400px;
     background-color: greenyellow;
