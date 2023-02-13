@@ -1,0 +1,71 @@
+/* VARIABLES */
+:root {
+    --jumbo-blue: #b4d0e7;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* GENERAL */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.jumbo-container {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* debug */
+    min-height: 500px;
+    background-color: rebeccapurple;
+}
+
+/* HEADER */
+/* Header top */
+.header {
+    height: 80px;
+    /* debug */
+    background-color: aquamarine;
+}
+
+/* Jumbotron */
+.jumbotron {
+    padding-top: 100px;
+    /* debug */
+    min-height: 600px;
+    background-color: var(--jumbo-blue);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    /* debug */
+    min-height: 100px;
+    background-color: bisque;
+}
+
+.jumbo-image {
+    width: 70%;
+    float: right;
+    /* debug */
+    background-color: yellow;
+}
+
+.jumbo-description {
+    /* debug */
+    min-height: 350px;
+    background-color: burlywood;
+}
