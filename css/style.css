@@ -204,3 +204,24 @@ h1 {
     border: var(--blackborder);
     background-color: cyan;
 }
+
+/* ----- Call to action ----- */
+.call-to-action {
+    background-color: var(--jumbo-blue);
+    padding: 50px 0;
+    margin-bottom: var(--margin-bottom);
+}
+
+.cta {
+    width: 60%;
+    /* debug */
+    min-height: 100px;
+    background-color: coral;
+}
+
+.start-free-trial {
+    width: 40%;
+    /* debug */
+    min-height: 100px;
+    background-color: brown;
+}
