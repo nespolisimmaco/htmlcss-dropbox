@@ -225,3 +225,25 @@ h1 {
     min-height: 100px;
     background-color: brown;
 }
+
+/* ----- FAQ ----- */
+.faq {
+    margin-bottom: var(--margin-bottom);
+    /* debug */
+    min-height: 200px;
+    background-color: darkgoldenrod;
+}
+
+.faq h2 {
+    margin-bottom: 50px;
+}
+
+.faq li {
+    list-style-type: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 30px 0;
+    /* debug */
+    min-height: 50px;
+    background-color: gold;
+}
