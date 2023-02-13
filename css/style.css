@@ -247,3 +247,22 @@ h1 {
     min-height: 50px;
     background-color: gold;
 }
+
+/* FOOTER */
+footer {
+    background-color: black;
+    /* debug */
+    min-height: 400px;
+}
+
+.footer-links {
+    padding: 60px 0;
+}
+
+.links {
+    width: calc(100% / 5);
+    /* debug */
+    min-height: 200px;
+    background-color: hotpink;
+    border: var(--blackborder);
+}
