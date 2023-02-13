@@ -2,6 +2,7 @@
 :root {
     --jumbo-blue: #b4d0e7;
     --blackborder: 2px dashed black;
+    --margin-bottom: 100px;
 }
 
 /* RESET */
@@ -87,7 +88,7 @@ h1 {
 /* MAIN */
 /* ----- Subscription plans section -----*/
 .subscription {
-    margin: 150px 0 100px;
+    margin: 150px 0 var(--margin-bottom);
     /* debug */
     min-height: 950px;
     background-color: cadetblue;
@@ -133,7 +134,7 @@ h1 {
 
 /* ----- Find a partner section ----- */
 .find-partner {
-    margin-bottom: 100px;
+    margin-bottom: var(--margin-bottom);
     /* debug */
     min-height: 400px;
     border: var(--blackborder);
@@ -155,7 +156,7 @@ h1 {
 
 /* ----- Dropbox Business section ----- */
 .drop-business {
-    margin-bottom: 100px;
+    margin-bottom: var(--margin-bottom);
     /* debug */
     border: var(--blackborder);
     background-color: green;
@@ -176,4 +177,30 @@ h1 {
 
 .middle {
     margin: 0 20px 1rem;
+}
+
+/* ----- Know more about our clients section ----- */
+.business-teams {
+    margin-bottom: var(--margin-bottom);
+    /* debug */
+    min-height: 200px;
+    background-color: green;
+}
+
+/* ----- Clients section ----- */
+.clients {
+    width: calc(100% / 3);
+    /* debug */
+    min-height: 400px;
+    background-color: crimson;
+    border: var(--blackborder);
+}
+
+/* Clients logos */
+.logo {
+    height: calc(100% / 2);
+    width: calc(100% / 2);
+    /* debug */
+    border: var(--blackborder);
+    background-color: cyan;
 }
