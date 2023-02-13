@@ -1,6 +1,7 @@
 /* VARIABLES */
 :root {
     --jumbo-blue: #b4d0e7;
+    --blackborder: 2px dashed black;
 }
 
 /* RESET */
@@ -30,6 +31,15 @@ body {
     /* debug */
     min-height: 500px;
     background-color: rebeccapurple;
+    border: var(--blackborder);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1100px;
+    /* debug */
+    border: var(--blackborder);
 }
 
 /* HEADER */
@@ -68,4 +78,70 @@ h1 {
     /* debug */
     min-height: 350px;
     background-color: burlywood;
+}
+
+/* MAIN */
+/* Subscription plans section*/
+.subscription {
+    margin: 150px 0 100px;
+    /* debug */
+    min-height: 950px;
+    background-color: cadetblue;
+}
+
+.subscription h2 {
+    /* debug */
+    min-height: 150px;
+    background-color: chocolate;
+}
+
+/* Subscription plans */
+.subscription-plans {
+    /* debug */
+    min-height: 800px;
+    background-color: blueviolet;
+}
+
+/* Plans columns */
+.plans {
+    /* debug */
+    min-height: 600px;
+    border: var(--blackborder);
+}
+
+/* Plans */
+.col {
+    width: calc(100% / 3);
+    /* debug */
+    border: 1px solid black;
+    min-height: 400px;
+}
+
+.col-middle {
+    margin: 0 3rem;
+}
+
+.enterprise-plan {
+    /* debug */
+    min-height: 200px;
+    border: var(--blackborder);
+}
+
+/* Find a partner section */
+.find-partner {
+    /* debug */
+    min-height: 400px;
+    border: var(--blackborder);
+}
+
+.partner-image {
+    /* debug */
+    min-height: 400px;
+    background-color: coral;
+}
+
+.partner-text {
+    /* debug */
+    min-height: 400px;
+    background-color: greenyellow;
 }
