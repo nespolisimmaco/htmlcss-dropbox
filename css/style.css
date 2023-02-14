@@ -5,6 +5,14 @@
     /* Colors */
     --jumbo-blue: #b4d0e7;
     --blue-btn: #0061ff;
+    --wine: #671434;
+    --designit: #a2d39b;
+    --arizona: #61082b;
+    --topps: #ff1c1c;
+    --designit-grey: #f5f5f5;
+    --wbr: #d5001f;
+    --lonely-planet: #0d2481;
+    --clear-channel: #ffd830;
 }
 
 /* ---------- RESET ---------- */
@@ -81,6 +89,10 @@ hr {
 
 .small-text {
     font-size: .8rem;
+}
+
+.wine {
+    color: var(--wine);
 }
 /* Buttons */
 .button {
@@ -297,20 +309,30 @@ h1 {
 
 /* ----- Clients section ----- */
 .clients {
-    width: calc(100% / 3);
+    min-width: calc(100% / 3);
     /* debug */
-    min-height: 400px;
+
     background-color: crimson;
     border: var(--blackborder);
+}
+
+.mid {
+    overflow: auto;
 }
 
 /* Clients logos */
 .logo {
     height: calc(100% / 2);
     width: calc(100% / 2);
+    text-align: center;
     /* debug */
     border: var(--blackborder);
     background-color: cyan;
+}
+
+.logo img {
+    filter: invert(100%);
+    width: 150px;
 }
 
 /* ----- Call to action ----- */
@@ -321,15 +343,11 @@ h1 {
 }
 
 .cta {
-    /* debug */
-    min-height: 100px;
-    background-color: coral;
+    padding: 2rem 10rem;
 }
 
 .start-free-trial {
-    /* debug */
-    min-height: 100px;
-    background-color: brown;
+    padding: 2rem 0;
 }
 
 /* ----- FAQ ----- */
