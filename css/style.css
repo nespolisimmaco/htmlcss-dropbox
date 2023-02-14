@@ -353,9 +353,6 @@ h1 {
 /* ----- FAQ ----- */
 .faq {
     margin-bottom: var(--margin-bottom);
-    /* debug */
-    min-height: 200px;
-    background-color: darkgoldenrod;
 }
 
 .faq h2 {
@@ -367,9 +364,10 @@ h1 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 30px 0;
-    /* debug */
-    min-height: 50px;
-    background-color: gold;
+}
+
+.faq li::after {
+    content: icon;
 }
 
 /* ---------- FOOTER ---------- */
