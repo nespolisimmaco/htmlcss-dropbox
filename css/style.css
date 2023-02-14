@@ -49,6 +49,25 @@ body {
     border: var(--blackborder);
 }
 
+/* Utilities */
+.col-70 {
+    width: 70%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Buttons */
 .button {
     display: inline-block;
     padding: 10px;
@@ -59,17 +78,29 @@ body {
     color: white;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* HEADER */
 /* ----- Header top ----- */
 .header {
     height: 80px;
-    /* debug */
-    background-color: aquamarine;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header-links {
+    line-height: 80px;
+}
+
+.header-links ul {
+    gap: 1.5rem;
+}
+
+.header-links .button.blue-button {
+    display: inline;
 }
 
 /* ----- Jumbotron ----- */
@@ -85,7 +116,6 @@ h1 {
 }
 
 .jumbo-image {
-    width: 70%;
     float: right;
 }
 
@@ -115,6 +145,7 @@ h1 {
 
 /* Subscription plans */
 .subscription-plans {
+    
     /* debug */
     min-height: 800px;
     background-color: blueviolet;
@@ -122,6 +153,7 @@ h1 {
 
 /* Plans columns */
 .plans {
+    justify-content: space-between;
     /* debug */
     min-height: 600px;
     border: var(--blackborder);
@@ -129,17 +161,13 @@ h1 {
 
 /* Plans */
 .col {
-    width: calc(100% / 3);
     /* debug */
     border: 1px solid black;
     min-height: 400px;
 }
 
-.col-middle {
-    margin: 0 3rem;
-}
-
 .enterprise-plan {
+    margin-top: 2rem;
     /* debug */
     min-height: 200px;
     border: var(--blackborder);
@@ -154,14 +182,12 @@ h1 {
 }
 
 .partner-image {
-    width: 60%;
     /* debug */
     min-height: 400px;
     background-color: coral;
 }
 
 .partner-text {
-    width: 40%;
     /* debug */
     min-height: 400px;
     background-color: greenyellow;
@@ -226,14 +252,12 @@ h1 {
 }
 
 .cta {
-    width: 60%;
     /* debug */
     min-height: 100px;
     background-color: coral;
 }
 
 .start-free-trial {
-    width: 40%;
     /* debug */
     min-height: 100px;
     background-color: brown;
