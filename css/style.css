@@ -75,6 +75,13 @@ hr {
     color: var(--blue-btn);
 }
 
+.text-align-right {
+    text-align: right;
+}
+
+.small-text {
+    font-size: .8rem;
+}
 /* Buttons */
 .button {
     display: inline-block;
@@ -172,16 +179,11 @@ h1 {
 .plans {
     justify-content: space-between;
     margin-top: 2rem;
-    /* debug */
-    min-height: 600px;
-    border: var(--blackborder);
 }
 
 /* Plans */
 .plan {
-    /* debug */
     border: 2px solid grey;
-    min-height: 400px;
 }
 
 /* Plan type */
@@ -189,7 +191,6 @@ h1 {
     text-align: center;
     border-bottom: 2px solid grey;
     padding: .5rem;
-    font-size: .8rem;
 }
 
 /* Plan details */
@@ -203,30 +204,28 @@ h1 {
 }
 
 .price {
-    font-size: .8rem;
     margin-bottom: .5rem;
 }
 
 .price-detail {
     color: grey;
-    font-size: .8rem;
 }
 
 .plan-features {
     margin: 2.5rem 0;
 }
 
+.plan-features ul {
+    margin-bottom: 2.2rem;
+}
+
 .plan-features li, .plan-highlights li {
     margin: .8rem 0;
 }
 
-.plan-details span {
-    font-size: .8rem;
-}
-
 .plan-details .button {
     padding: 10px 2rem;
-    margin: 2.5rem 0 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .plan-highlights {
@@ -236,9 +235,11 @@ h1 {
 /* Enterprise plan (horizontal plan) */
 .enterprise-plan {
     margin-top: 2rem;
-    /* debug */
-    min-height: 200px;
-    border: var(--blackborder);
+    border: 2px solid grey;
+}
+
+.enterprise-plan .price {
+    margin-bottom: 3rem;
 }
 
 /* ----- Find a partner section ----- */
