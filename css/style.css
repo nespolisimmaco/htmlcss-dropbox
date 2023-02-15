@@ -119,6 +119,7 @@ hr {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
     width: 100%;
     justify-content: space-between;
     background-color: white;
@@ -297,12 +298,10 @@ h1 {
 
 /* ----- Clients section ----- */
 .clients {
-    width: calc(100% / 3);
-    height: 60vh;
+    width: calc(100vw / 3);
     /* debug */
 
     background-color: crimson;
-    border: var(--blackborder);
 }
 
 .mid {
@@ -312,12 +311,12 @@ h1 {
 
 /* Clients logos */
 .logo {
-    height: calc(60vh / 2);
-    width: calc(60vh / 2);
+    width: calc((100vw / 3) / 2) ;
+    height: calc((100vw / 3) / 2);
+    padding: 60px;
     text-align: center;
-    /* debug */
-    border: var(--blackborder);
-    background-color: cyan;
+    background-color: #0061ff;
+    border: 1px solid black;
 }
 
 .logo img {
