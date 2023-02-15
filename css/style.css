@@ -13,6 +13,7 @@
     --wbr: #d5001f;
     --lonely-planet: #0d2481;
     --clear-channel: #ffd830;
+    --florida: #0093ce;
 }
 
 /* ---------- RESET ---------- */
@@ -49,8 +50,6 @@ body {
     width: 60%;
     margin: 0 auto;
     max-width: 1100px;
-    /* debug */
-    border: var(--blackborder);
 }
 
 .col-70 {
@@ -132,6 +131,10 @@ hr {
 /* Header utilities */
 .header-links {
     line-height: 80px;
+}
+
+.header-links li:hover {
+    border-bottom: 2px solid var(--blue-btn);
 }
 
 .header-links ul {
@@ -299,31 +302,69 @@ h1 {
 /* ----- Clients section ----- */
 .clients {
     width: calc(100vw / 3);
-    /* debug */
-
-    background-color: crimson;
 }
 
 .mid {
     overflow: auto;
     background-color: var(--designit-grey);
+    padding: 2.5rem;
+    max-height: 250px;
+}
+
+.mid img {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.mid p {
+    margin: 2rem 0;
 }
 
 /* Clients logos */
 .logo {
     width: calc((100vw / 3) / 2) ;
     height: calc((100vw / 3) / 2);
-    padding: 60px;
-    text-align: center;
-    background-color: #0061ff;
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
 }
 
 .logo img {
     filter: invert(100%);
-    width: 150px;
+    width: 120px;
 }
 
+/* Colors of the boxes with logo */
+#designit {
+    background-color: var(--designit);
+}
+
+#arizona {
+    background-color: var(--arizona);
+}
+
+#florida {
+    background-color: var(--florida);
+}
+
+#topps {
+    background-color: var(--topps);
+}
+
+#bicycle {
+    background-color: var(--wbr);
+}
+
+#hearst {
+    background-color: var(--jumbo-blue);
+}
+
+#planet {
+    background-color: var(--lonely-planet);
+}
+
+#channel {
+    background-color: var(--clear-channel);
+}
 /* ----- Call to action ----- */
 .call-to-action {
     background-color: var(--jumbo-blue);
@@ -357,6 +398,15 @@ h1 {
 
 .faq span {
     float: right;
+}
+
+.faq p {
+    margin-top: 2rem;
+    display: none;
+}
+
+li:hover p {
+    display: inline-block;
 }
 
 /* ---------- FOOTER ---------- */
